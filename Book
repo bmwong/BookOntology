@@ -1,0 +1,62 @@
+Book
+	TextBook
+	NovelBook
+		FictionBook
+		NonFictionBook
+	MagazineBook
+	ChildrensBook
+	PictureBook
+	ComicBook
+	NamedBook
+		HarryPotter
+		Twilight
+		1984
+		TheGreatGatsby
+		Elle
+		GreenEggsAndHam
+		Superman
+		ArtificialIntelligenceAModernApproach
+		SportingNews
+		WineEnthusiast
+BookCover
+	HardCover
+	SoftCover
+Subject
+	SportsSubject
+	BusinessSubject
+	TechnologySubject
+	FoodSubject
+		BreakfastSubject
+		LunchSubject
+		DinnerSubject
+		BeveragesSubject
+			WineSubject
+			MixedDrinksSubject
+			SmoothiesSubject
+		DessertSubject
+		HealthySubject
+	HistorySubject
+	GeographySubject
+	FashionSubject
+	EntertainmentSubject
+	FitnessSubject
+	BeautySubject
+Genre
+	FantasyGenre
+	ScienceFictionGenre
+	RomanceGenre
+	ComedyGenre
+	HorrorGenre
+	SportsGenre
+Author
+	MaleAuthor
+	FemaleAuthor
+	NamedAuthor
+		DrSeuss
+		JKRowling
+		GeorgeOrwell
+		StephenieMeyer
+		FScottFitzgerald
+Location
+	Library
+	BookStore

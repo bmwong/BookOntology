@@ -1,0 +1,625 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ArtificialIntelligenceAModernApproach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ArtificialIntelligenceAModernApproach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BeautySubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BeautySubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BeveragesSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BeveragesSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FoodSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover"/>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookStore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Location"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BreakfastSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BreakfastSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FoodSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BusinessSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BusinessSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComedyGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComedyGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComicBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComicBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DessertSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DessertSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FoodSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DinnerSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DinnerSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FoodSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedAuthor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Elle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Elle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#EntertainmentSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#EntertainmentSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FScottFitzgerald -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FScottFitzgerald">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedAuthor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FashionSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FashionSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FemaleAuthor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FemaleAuthor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FictionBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FictionBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NovelBook"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NonFictionBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FitnessSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FitnessSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FoodSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FoodSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GeographySubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GeographySubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GeorgeOrwell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GeorgeOrwell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedAuthor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HardCover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HardCover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SoftCover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HealthySubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HealthySubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FoodSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HistorySubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HistorySubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HorrorGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HorrorGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedAuthor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#LunchSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#LunchSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FoodSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MagazineBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MagazineBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MaleAuthor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MaleAuthor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MixedDrinksSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MixedDrinksSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BeveragesSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedAuthor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedAuthor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NonFictionBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NonFictionBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NovelBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NovelBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NovelBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#PictureBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#PictureBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#RomanceGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#RomanceGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ScienceFictionGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ScienceFictionGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SmoothiesSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SmoothiesSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BeveragesSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SoftCover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SoftCover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SportingNews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SportingNews">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SportsGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SportsGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SportsSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SportsSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#StephenieMeyer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#StephenieMeyer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedAuthor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Superman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Superman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TechnologySubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TechnologySubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TextBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TextBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TheGreatGatsby -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TheGreatGatsby">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Twilight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Twilight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#WineEnthusiast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#WineEnthusiast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#WineSubject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#WineSubject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BeveragesSubject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#1984 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#1984">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ArtificialIntelligenceAModernApproach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Elle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SportingNews"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Superman"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TheGreatGatsby"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Twilight"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#WineEnthusiast"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#1984"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BeautySubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BusinessSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#EntertainmentSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FashionSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FitnessSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FoodSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GeographySubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HistorySubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SportsSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TechnologySubject"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BeveragesSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BreakfastSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DessertSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DinnerSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HealthySubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#LunchSubject"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComicBook"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MagazineBook"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NovelBook"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#PictureBook"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TextBook"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComedyGenre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HorrorGenre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#RomanceGenre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ScienceFictionGenre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SportsGenre"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FScottFitzgerald"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GeorgeOrwell"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#StephenieMeyer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FemaleAuthor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MaleAuthor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedAuthor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MixedDrinksSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SmoothiesSubject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#WineSubject"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
