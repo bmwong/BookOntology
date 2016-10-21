@@ -13,6 +13,78 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasCover -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasCover">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasGenre">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComicBook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NovelBook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#PictureBook"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasSubject">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MagazineBook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TextBook"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
