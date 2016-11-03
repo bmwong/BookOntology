@@ -26,6 +26,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+        <rdfs:comment>A book has an author if that author contributed to the book</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -36,6 +37,7 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasSeries"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Series"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+        <rdfs:comment>A series has a book if that book is part of the series</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -56,6 +58,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover"/>
+        <rdfs:comment>A book has a hard or soft cover</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -74,6 +77,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+        <rdfs:comment>A childrens book, a comic book, a novel book, or a picture book must have a genre</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -93,6 +97,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasLocation">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Location"/>
+        <rdfs:comment>A book has a location if that book can be found in that location</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -102,6 +107,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasSeries">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Series"/>
+        <rdfs:comment>A book has a series if that book is contained in that series</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -118,6 +124,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+        <rdfs:comment>A magazine book or a text book must have a subject</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -138,15 +145,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAddress">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthorName -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthorName">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>An address associated with the location</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -156,6 +155,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasEdition">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TextBook"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment>A textbook has an edition number</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -172,6 +172,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment>A magizine book or a comic book has an issue number</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -181,6 +182,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasPages">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment>The number of pages in the book</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -200,6 +202,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>If a book contains pictures</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -209,6 +212,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasWonAward">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>If a book has won an award</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -234,7 +238,9 @@
 
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author">
+        <rdfs:comment>Someone who contributed to writing the book</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -257,26 +263,56 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasPages"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasGenre"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasSubject"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasCover"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HardCover"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasCover"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SoftCover"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasPages"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>A book has a cover (soft or hard), at least one author, a positive number of pages, and either has a genre or a subject.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover">
+        <rdfs:comment>A book cover can either be a hard cover or a soft cover</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -308,7 +344,7 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
@@ -316,9 +352,27 @@
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasGenre"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasPages"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">100</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasPictures"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:comment>A children&apos;s book is a book that has pictures, at least one genre, and less than or equal to 100 pages</rdfs:comment>
     </owl:Class>
     
 
@@ -334,24 +388,30 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComicBook -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComicBook">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasGenre"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasGenre"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasIssue"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasPictures"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasIssue"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:comment>A comic book is a book that has at least one genre, has pictures, and has a positive issue number.</rdfs:comment>
     </owl:Class>
     
 
@@ -478,6 +538,18 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
     </owl:Class>
     
@@ -495,6 +567,13 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotter">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
     </owl:Class>
     
@@ -550,6 +629,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A location is a place that has an address where a book can be found</rdfs:comment>
     </owl:Class>
     
 
@@ -565,24 +645,26 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MagazineBook -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MagazineBook">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasSubject"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasSubject"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasIssue"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasIssue"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:comment>A magazine book is a book that has at least one subject, and has a positive issue number.</rdfs:comment>
     </owl:Class>
     
 
@@ -615,6 +697,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+        <rdfs:comment>A book that has a specific title</rdfs:comment>
     </owl:Class>
     
 
@@ -630,7 +713,7 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NovelBook -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NovelBook">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
@@ -638,9 +721,14 @@
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasGenre"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasPictures"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:comment>A novel book is a book that has at least one genre, and has no pictures</rdfs:comment>
     </owl:Class>
     
 
@@ -648,7 +736,7 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#PictureBook -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#PictureBook">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
@@ -656,9 +744,14 @@
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasGenre"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasPictures"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:comment>A picture book is a book that has at least one genre, and has pictures</rdfs:comment>
     </owl:Class>
     
 
@@ -688,6 +781,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A sequence of books that are related</rdfs:comment>
     </owl:Class>
     
 
@@ -765,24 +859,27 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TextBook -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TextBook">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasSubject"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasSubject"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Subject"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasEdition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasEdition"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:comment>A text book is a book that has to have one subject and a positive edition number</rdfs:comment>
     </owl:Class>
     
 
@@ -790,6 +887,13 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TheGreatGatsby -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TheGreatGatsby">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FScottFitzgerald"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
     </owl:Class>
     
@@ -798,6 +902,13 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Twilight -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Twilight">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#StephenieMeyer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
     </owl:Class>
     
@@ -822,8 +933,235 @@
     <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#1984 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#1984">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#hasAuthor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GeorgeOrwell"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MaleAuthor"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeussSeries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeussSeries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Series"/>
+        <hasBook rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam"/>
+        <hasBook rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TheCatInTheHat"/>
+        <rdfs:comment>The collection of books written by Dr. Seuss</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Genre"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FictionBook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss"/>
+        <hasCover rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SoftCover"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre"/>
+        <hasLibrary rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#KitchenerPublicLibrary"/>
+        <hasPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</hasPages>
+        <hasPictures rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasPictures>
+        <hasWonAward rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasWonAward>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HardCover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HardCover">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HardCover"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotterAndTheSorcerersStone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotterAndTheSorcerersStone">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FictionBook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotter"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling"/>
+        <hasBookStore rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#UWaterlooBookStore"/>
+        <hasCover rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HardCover"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre"/>
+        <hasLibrary rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#KitchenerPublicLibrary"/>
+        <hasSeries rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotterSeries"/>
+        <hasPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">223</hasPages>
+        <hasPictures rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasPictures>
+        <hasWonAward rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasWonAward>
+        <rdfs:comment>A fiction book written by JK Rowling</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotterSeries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HarryPotterSeries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Series"/>
+        <rdfs:comment>The collection of books in the Harry Potter Series</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Author"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FemaleAuthor"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#KitchenerPublicLibrary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#KitchenerPublicLibrary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Library"/>
+        <hasAddress>85 Queen St N, Kitchener, ON N2H 2H1</hasAddress>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SoftCover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SoftCover">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookCover"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SoftCover"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TheCatInTheHat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TheCatInTheHat">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#Book"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FictionBook"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss"/>
+        <hasCover rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#SoftCover"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre"/>
+        <hasLibrary rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#KitchenerPublicLibrary"/>
+        <hasPages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</hasPages>
+        <hasPictures rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasPictures>
+        <hasWonAward rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasWonAward>
+        <rdfs:comment>A childrens book written by Dr. Seuss</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#UWaterlooBookStore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#UWaterlooBookStore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#BookStore"/>
+        <hasAddress>University of Waterloo, 200 University Ave W, Waterloo, ON N2L 3G1</hasAddress>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#DrSeuss">
+        <rdfs:comment>Dr. Seuss is a male author</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GreenEggsAndHam">
+        <rdfs:comment>A childrens book written by Dr. Seuss</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling">
+        <rdfs:comment>A female author</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -890,18 +1228,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ChildrensBook"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComicBook"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MagazineBook"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedBook"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NovelBook"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#PictureBook"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#TextBook"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#ComedyGenre"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FantasyGenre"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#HorrorGenre"/>
@@ -918,14 +1244,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#GeorgeOrwell"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#JKRowling"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#StephenieMeyer"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#FemaleAuthor"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#MaleAuthor"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/normanwong/ontologies/2016/9/untitled-ontology-4#NamedAuthor"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
